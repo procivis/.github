@@ -1,4 +1,4 @@
-# .github
+# Procivis One
 
 Procivis One is a robust solution capable of powering every element of the digital identity
 credential lifecycle — schema definition, credential design, issuance, holding, revocation,
