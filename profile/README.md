@@ -40,7 +40,9 @@ requirements emerge.
 
 ## Architecture
 
-![Procivis One Core - Architecture](docs/assets/architecture_one_core.png)
+![Procivis One Core - Architecture](architecture_one_core.png)
+
+![Procivis One Core - Architecture](/architecture_one_core.png)
 
 Procivis_One_components.png
 
