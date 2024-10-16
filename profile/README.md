@@ -58,7 +58,7 @@ existing components built on the Core.
     to embed wallet capabilities into an existing app, and use the One React Native Components library
     for UI elements for your digital wallet app.
   - [Procivis One Wallet][wallet]
-  - [React Native One Core][rncore]
+  - [One Core React Native SDK][rncore]
   - [One React Native Components][comp]
 
 ### Enterprise
