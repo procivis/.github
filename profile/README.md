@@ -70,12 +70,14 @@ existing components built on the Core.
     functionality of the Core and enables offline verification in both OID4VP and ISO mdoc flows
     over Bluetooth Low Energy (BLE). See the trial version in the iOS and Android app stores.
 
-[Contact us][contact] to find out more.
+### Components
 
 The following graphic represents a **component view** of Procivis One. All components
 are built from the Procivis One Core and share the same code base.
 
 ![Procivis One Components](/Procivis_One_components.png)
+
+[Contact us][contact] to find out more.
 
 [comp]: https://github.com/procivis/one-react-native-components
 [contact]: https://www.procivis.ch/en/contact
