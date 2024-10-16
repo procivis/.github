@@ -40,11 +40,7 @@ requirements emerge.
 
 ## Architecture
 
-![Procivis One Core - Architecture](architecture_one_core.png)
-
 ![Procivis One Core - Architecture](/architecture_one_core.png)
-
-Procivis_One_components.png
 
 Use the Procivis One Core to build components for your own use case, or use one of the
 existing components built on the Core.
@@ -79,9 +75,7 @@ existing components built on the Core.
 The following graphic represents a **component view** of Procivis One. All components
 are built from the Procivis One Core and share the same code base.
 
-https://github.com/procivis/.github/blob/580d3ee980e6449cb3f9efc38ed94a77de1f3a20/Procivis_One_components.png
-
-![Procivis One Components](docs/assets/Procivis_One_components.png)
+![Procivis One Components](/Procivis_One_components.png)
 
 [comp]: https://github.com/procivis/one-react-native-components
 [contact]: https://www.procivis.ch/en/contact
