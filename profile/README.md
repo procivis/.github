@@ -40,7 +40,7 @@ requirements emerge.
 
 ## Architecture
 
-![Procivis One Core - Architecture](/architecture_one_core.png)
+![Procivis One Core - Architecture](/Architecture_Procivis_One.png)
 
 Use the Procivis One Core to build components for your own use case, or use one of the
 existing components built on the Core.
