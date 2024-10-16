@@ -54,7 +54,7 @@ existing components built on the Core.
   - [Procivis One Core][core]
 - **Procivis One Wallet**: a digital wallet solution that includes the SSI functionality
     of the Core and is available with an open source license. Use the Procivis One Wallet
-    for a free-standing solution that can be white-labelled, use the React Native One Core
+    for a free-standing solution that can be white-labelled, use the One Core React Native SDK
     to embed wallet capabilities into an existing app, and use the One React Native Components library
     for UI elements for your digital wallet app.
   - [Procivis One Wallet][wallet]
