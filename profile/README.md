@@ -75,7 +75,7 @@ existing components built on the Core.
 The following graphic represents a **component view** of Procivis One. All components
 are built from the Procivis One Core and share the same code base.
 
-![Procivis One Components](/Procivis_One_components.png)
+![Procivis One Components](/Procivis_One_Components.png)
 
 [Contact us][contact] to find out more.
 
