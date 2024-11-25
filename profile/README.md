@@ -60,7 +60,7 @@ The following components of *Procivis One* are available with an open source lic
     for UI elements for your digital wallet app.
   - [Procivis One Wallet][wallet]
   - [One Core React Native SDK][rncore]
-  - [One Core React Components][comp]
+  - [One Core React Native Components][comp]
 
 ### Enterprise
 
@@ -69,7 +69,7 @@ The components listed above are available with an Enterprise license, as well as
 - **Procivis One Desk**: a server-based solution that includes the SSI functionality
     of the *Procivis One Core* and adds enterprise functionality such as user and session management, and a
     dashboard for no-code issuance and verification. [Sign up for the trial][trial].
-- **Procivis One Mobile Verifier**: a mobile verifying solution that includes the SSI
+- **Procivis One Verifier**: a mobile verifying solution that includes the SSI
     functionality of the *Procivis One Core* and enables offline verification in both OID4VP and ISO mdoc flows
     over Bluetooth Low Energy (BLE). See the trial version in the iOS and Android app stores.
 
