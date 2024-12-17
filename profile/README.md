@@ -39,7 +39,7 @@ requirements emerge.
 
 ## Architecture
 
-![Procivis One Core - Architecture](/Procivis_One_Architecture_Dec9.png)
+![Procivis One Core - Architecture](/Procivis_One_Architecture1.png)
 
 Use the *Procivis One Core* to build components for your own use case, or use one of the
 existing components built on the Core.
@@ -78,7 +78,7 @@ The components listed above are available with an Enterprise license, as well as
 The following graphic represents a **component view** of Procivis One. All components
 are built from the Procivis One Core and share the same code base.
 
-![Procivis One Components](/Procivis_One_Components.png)
+![Procivis One Components](/Procivis_One_Components1.png)
 
 [Contact us][contact] to find out more.
 
