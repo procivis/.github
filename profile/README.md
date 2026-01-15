@@ -37,6 +37,19 @@ requirements emerge.
   - *Procivis One* covers use cases from issuance to management to verification of digital identities and
     credentials and offers support for all components – from one source.
 
+## eIDAS 2
+
+Following the
+[Architecture and Reference Framework (ARF)](https://eudi.dev/latest/architecture-and-reference-framework-main/),
+Procivis One provides technology for:
+	
+- PID and Attestation Providers  
+- Relying Parties  
+- Wallet Providers
+- Registrars of Wallet-Relying Parties
+- Access Certificate Authorities
+- Registration Certificate Providers
+
 ## Architecture
 
 ![Procivis One Core - Architecture](/Procivis_One_Architecture1.png)
@@ -79,6 +92,10 @@ The following graphic represents a **component view** of Procivis One. All compo
 are built from the Procivis One Core and share the same code base.
 
 ![Procivis One Components](/Procivis_One_Components1.png)
+
+## What's next
+
+See the [documentation](https://docs.procivis.ch/).
 
 [Contact us][contact] to find out more.
 
