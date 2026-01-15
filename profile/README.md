@@ -93,7 +93,7 @@ are built from the Procivis One Core and share the same code base.
 
 ![Procivis One Components](/Procivis_One_Components1.png)
 
-## More
+## Next steps
 
 See the [documentation](https://docs.procivis.ch/).
 
