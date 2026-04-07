@@ -81,7 +81,7 @@ The components listed above are available with an Enterprise license, as well as
 
 - **Procivis One Desk**: a server-based solution that includes the SSI functionality
     of the *Procivis One Core* and adds enterprise functionality such as user and session management, and a
-    dashboard for no-code issuance and verification. [Sign up for the trial][trial].
+    dashboard for no-code issuance and verification. [Start your free trial today][trial].
 - **Procivis One Verifier**: a mobile verifying solution that includes the SSI
     functionality of the *Procivis One Core* and enables offline verification in both OID4VP and ISO mdoc flows
     over Bluetooth Low Energy (BLE). See the trial version in the iOS and Android app stores.
