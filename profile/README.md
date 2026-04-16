@@ -52,7 +52,7 @@ Procivis One provides technology for:
 
 ## Architecture
 
-![Procivis One Core - Architecture](/Procivis_One_Architecture1.png)
+![Procivis One Core - Architecture](/profile/Procivis_One_Architecture.png)
 
 Use the *Procivis One Core* to build components for your own use case, or use one of the
 existing components built on the Core.
