@@ -66,7 +66,7 @@ The following components of *Procivis One* are available with an open source lic
     business and IT applications via REST, SDK, or mobile SDK. Use the *Procivis One Core* to build components
     for your own use case, or use one of the existing components built on the Core.
   - [Procivis One Core][core]
-- **Procivis One Wallet**: a digital wallet solution that includes the SSI functionality
+- **Procivis One Wallet App**: a digital wallet solution that includes the SSI functionality
     of the Core and is available with an open source license. Use the *Procivis One Wallet*
     for a free-standing solution that can be white-labelled, use the *One Core React Native SDK*
     to embed wallet capabilities into an existing app, and use the *One Core React Components* library
@@ -82,16 +82,14 @@ The components listed above are available with an Enterprise license, as well as
 - **Procivis One Desk**: a server-based solution that includes the SSI functionality
     of the *Procivis One Core* and adds enterprise functionality such as user and session management, and a
     dashboard for no-code issuance and verification. [Sign up for the trial][trial].
-- **Procivis One Verifier**: a mobile verifying solution that includes the SSI
+- **Procivis One Verifier App**: a mobile verifying solution that includes the SSI
     functionality of the *Procivis One Core* and enables offline verification in both OID4VP and ISO mdoc flows
     over Bluetooth Low Energy (BLE). See the trial version in the iOS and Android app stores.
-
-### Components
-
-The following graphic represents a **component view** of Procivis One. All components
-are built from the Procivis One Core and share the same code base.
-
-![Procivis One Components](/Procivis_One_Components1.png)
+- **Procivis One Business Wallet**: Server-based wallet for organizations to manage digital credentials.
+- **Procivis One Wallet-Relying Party Registry**: Registry infrastructure for managing and publishing
+    authorized wallet-relying parties.
+- **Procivis One OpenID Bridge**: Enables any OIDC provider to use verifiable credentials for login
+    without usernames and passwords.
 
 ## Next steps
 
