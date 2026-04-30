@@ -1,108 +1,118 @@
-# Procivis One
-
-*Procivis One* is a robust solution capable of powering every element of the digital identity
-credential lifecycle — schema definition, credential design, issuance, holding, revocation,
-suspension, updating and verifying digital credentials — and integrating them into business
-processes through a range of integration pathways and deployments.
-
-Handle credential-driven use cases and processes flexibly with an extensible configuration
-that supports multiple credential formats, revocation methods, key types, signatures, and
-DID methods. *Procivis One* is built to connect your organization to the SSI ecosystem, become
-compatible with regulations such as **eIDAS 2.0**, and be extensible as new regulations and
-requirements emerge.
-
-## Key features
-
-- **Flexible**
-  - Our architecture includes various protocols, can be expanded, and meets the technical
-    requirements of [**eIDAS 2.0**][eidas] and the **Swiss eID ecosystem**. We take care of
-    the complexity and developments around protocols.
-- **Interoperable**
-  - Uses standardized protocols for credential lifecycles for maximum compatability with
-    software from other vendors. See the [supported standards][suppstand] and results of
-    [interoperability][interop] testing.
-- **Performant**
-  - *Procivis One* is scalable and suitable for use cases with millions of users, digital identities
-    and credentials.
-- **Deployable**
-  - *Procivis One* can be installed and operated anywhere: in your data center, at your preferred
-    cloud provider or even on IoT devices. The decision is up to you.
-- **Privacy by design**
-  - Our solution meets the highest data protection requirements such as decentralized data storage,
-    data economy and privacy by design.
-- **Enterprise ready**
-  - *Procivis One* meets all the requirements for productive use by authorities and companies, including
-    support and further developments.
-- **End-to-end**
-  - *Procivis One* covers use cases from issuance to management to verification of digital identities and
-    credentials and offers support for all components – from one source.
-
-## eIDAS 2
-
-Following the
-[Architecture and Reference Framework (ARF)](https://eudi.dev/latest/architecture-and-reference-framework-main/),
-Procivis One provides technology for:
-	
-- PID and Attestation Providers  
-- Relying Parties  
-- Wallet Providers
-- Registrars of Wallet-Relying Parties
-- Access Certificate Authorities
-- Registration Certificate Providers
+Procivis One is a modular system for digital identity and credentials.
+This page covers how the system is composed and what each component does.
 
 ## Architecture
 
 ![Procivis One Core - Architecture](/profile/Procivis_One_Architecture.png)
 
-Use the *Procivis One Core* to build components for your own use case, or use one of the
-existing components built on the Core.
+The architecture diagram shows the full system: the open source Core at
+the foundation, the components built on top of it, and the integration
+interfaces (REST API, SDK, and mobile SDK) that connect them to external
+systems and applications.
 
-### Open source
+## Components
+ 
+Procivis One is made up of five components: Core, Desk, Wallet-Relying
+Party Registry, Mobile, and OpenID Bridge.
 
-The following components of *Procivis One* are available with an open source license:
+### Core
 
-- **Procivis One Core**: handles everything needed to
-    issue, hold and verify decentralized digital identity and credentials, and integrates into
-    business and IT applications via REST, SDK, or mobile SDK. Use the *Procivis One Core* to build components
-    for your own use case, or use one of the existing components built on the Core.
-  - [Procivis One Core][core]
-- **Procivis One Wallet App**: a digital wallet solution that includes the SSI functionality
-    of the Core and is available with an open source license. Use the *Procivis One Wallet*
-    for a free-standing solution that can be white-labelled, use the *One Core React Native SDK*
-    to embed wallet capabilities into an existing app, and use the *One Core React Components* library
-    for UI elements for your digital wallet app.
-  - [Procivis One Wallet][wallet]
-  - [One Core React Native SDK][rncore]
-  - [One Core React Native Components][comp]
+<img width="1096" height="939" alt="Core Component" src="https://github.com/user-attachments/assets/708d7684-f496-49bc-91ee-8a4004451abb" />
 
-### Enterprise
+The Procivis One Core is the open source foundation of the system. It
+integrates into applications via REST API, server SDK, or mobile SDK
+(React Native, Swift, Kotlin).
 
-The components listed above are available with an Enterprise license, as well as:
+Core capabilities include:
 
-- **Procivis One Desk**: a server-based solution that includes the SSI functionality
-    of the *Procivis One Core* and adds enterprise functionality such as user and session management, and a
-    dashboard for no-code issuance and verification. [Sign up for the trial][trial].
-- **Procivis One Verifier App**: a mobile verifying solution that includes the SSI
-    functionality of the *Procivis One Core* and enables offline verification in both OID4VP and ISO mdoc flows
-    over Bluetooth Low Energy (BLE). See the trial version in the iOS and Android app stores.
-- **Procivis One Business Wallet**: Server-based wallet for organizations to manage digital credentials.
-- **Procivis One Wallet-Relying Party Registry**: Registry infrastructure for managing and publishing
-    authorized wallet-relying parties.
-- **Procivis One OpenID Bridge**: Enables any OIDC provider to use verifiable credentials for login
-    without usernames and passwords.
+- **Credential lifecycle** — issue, hold, verify, revoke, and suspend
+  credentials across all supported formats and identifiers
+- **Certificate management** — generate certificate authorities, issue
+  and sign certificates, and manage revocation via CRL, without external
+  PKI infrastructure
+- **Wallet provider** — issue wallet unit attestations (WUA), wallet
+  instance attestations (WIA), and manage trust list collections for
+  wallets
+- **Trusted list publishing** — publish and manage trusted lists in
+  supported formats
 
-## Next steps
+See [Standards]([/standards](https://docs.procivis.ch/standards)) for the current
+list of supported technologies and protocols.
 
-See the [documentation](https://docs.procivis.ch/).
+[Procivis One Core on GitHub](https://github.com/procivis/one-core) ·
+[Core API reference](https://docs.procivis.ch/reference/core/procivis-one-core-api)
 
-[Contact us][contact] to find out more.
+### Desk
 
-[comp]: https://github.com/procivis/one-react-native-components
-[contact]: https://www.procivis.ch/en/contact
-[core]: https://github.com/procivis/one-core
-[eidas]: https://github.com/procivis/one-core?tab=readme-ov-file#eidas-20
-[interop]: https://github.com/procivis/one-core?tab=readme-ov-file#interoperability-and-conformance
-[rncore]: https://github.com/procivis/react-native-one-core
-[suppstand]: https://github.com/procivis/one-core?tab=readme-ov-file#supported-standards
-[trial]: https://docs.procivis.ch/trial/intro
-[wallet]: https://github.com/procivis/one-wallet
+<img width="862" height="740" alt="component_desk" src="https://github.com/user-attachments/assets/d1b0d1a9-3d2b-4f31-9951-14b52f37344a" />
+
+Desk is the enterprise backend component. It wraps the Core with
+functionality designed for organizational deployments. Desk capabilities
+include:
+
+- **IAM integration** — integrate with your existing identity provider with
+  streamlined OpenID Connect token exchange and role-to-permission mapping
+- **Multi-tenant organization management** — run multiple organizations and
+  manage their resources independently within a single deployment
+- **Country profiles** — pre-configured credential format and protocol
+  settings for supported national ecosystems, simplifying compliance for
+  users
+- **Desk UI** — a no-code web interface for managing the full capabilities
+  of Core, Desk, WRPR, and OpenID Bridge
+
+[Desk API reference](https://docs.procivis.ch/reference/desk/procivis-one-desk-api) ·
+[Try the Desk UI](https://docs.procivis.ch/trial)
+
+### Wallet-Relying Party Registry
+
+<img width="886" height="692" alt="component_wrpr" src="https://github.com/user-attachments/assets/a2df6c5c-63ad-4f42-824a-5b05b4e73f63" />
+
+The Wallet-Relying Party Registry (WRPR) is infrastructure for national
+wallet-relying party registration schemes. It handles registrar functions
+for national registry compliance (EU 2025/848, ETSI TS 119 475, ETSI TS 119
+411-8) and certificate provisioning (access certificates and registration
+certificates). The WRPR service runs on Core and can be operated standalone
+or together with Desk — when deployed with Desk, the Desk UI provides the
+registrar interface with the enterprise backend benefits of Desk.
+ 
+[Wallet-Relying Party Registry](https://docs.procivis.ch/wallet-relying-party-registry) ·
+[WRPR API reference](https://docs.procivis.ch/reference/wrpr/wallet-relying-party-registry-api)
+
+### Mobile
+ 
+The Mobile component covers two applications built on the Core's mobile SDK:
+ 
+**Wallet App** — a digital wallet for holding and presenting credentials.
+Available as an open source reference implementation that can be
+white-labelled, or embedded into an existing app using the One Core React
+Native SDK and React Native Components library.
+ 
+**Verifier App** — an enterprise mobile verifying application supporting
+offline verification over Bluetooth Low Energy (BLE) in both OID4VP and ISO
+mdoc flows. The app is available on app stores and can be initialized in our
+[trial environment](/trial) for testing and demonstration.
+ 
+[Procivis One Wallet on GitHub](https://github.com/procivis/one-wallet) ·
+[React Native SDK on GitHub](https://github.com/procivis/react-native-one-core) ·
+[SDK documentation](https://docs.procivis.ch/reference/sdk)
+
+### OpenID Bridge
+ 
+The OpenID Bridge integrates verifiable credentials into existing IAM
+systems, enabling credential-based login for any OIDC provider without
+replacing existing infrastructure. Available under an enterprise license.
+ 
+[OpenID Bridge documentation](https://docs.procivis.ch/openid-bridge)
+
+## Licensing
+ 
+| Open source | Enterprise |
+|---|---|
+| Procivis One Core | Procivis One Desk |
+| Procivis One Wallet App | Procivis One Verifier App |
+| One Core React Native SDK | Procivis One Business Wallet |
+| One React Native Components | Wallet-Relying Party Registry |
+| | OpenID Bridge |
+ 
+[Procivis on GitHub](https://github.com/procivis) ·
+[Contact us](https://www.procivis.ch/en/contact) for enterprise licensing
